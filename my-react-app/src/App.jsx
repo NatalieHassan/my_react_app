@@ -1,7 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React from 'react'
+import  mommaCat from './assets/mommaCat.avif'
 import './App.css'
 
+
+function App() {
 // Task 1: Display two variables-user information-message//
   const greeting = "Hello React student!";
   const welcomeMessage = "Welcome to the React course!";
@@ -13,8 +15,8 @@ import './App.css'
      favoriteActivities: ["coding", "listening to music", "reading", "cooking"]
    };
   
-  function App() {
-  
+   return (
+  <>
   <div className="App">
   {/* Task 1: Display two variables */}
   <h1>{greeting}</h1>
@@ -41,12 +43,17 @@ import './App.css'
        <li>{userInfo.favoriteActivities[2]}</li>{/* "reading" */}
        <li>{userInfo.favoriteActivities[3]}</li>{/* “cooking”*/}
     </ul>
-  
+    </div>
     
     {/* Task 4: Display image */}
+    <div>
+    <h3>Cute Kittens:</h3>
+    <p>Here is a picture of a momma cat with her kittens:</p>
+    <a href="https://www.pexels.com/photo/momma-cat-with-kittens-20787/" target="_blank">Photo Source</a>
     <img src={Foster-Agave-1-byAnnika-Harley} alt="momma cat with kittens" />
     </div>
-return   
+    </> 
+  )
 }
 
 export default App
