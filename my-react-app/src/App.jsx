@@ -49,8 +49,8 @@ function App() {
     <div>
     <h3>Cute Kittens:</h3>
     <p>Here is a picture of a momma cat with her kittens:</p>
-    <a href="https://www.pexels.com/photo/momma-cat-with-kittens-20787/" target="_blank">Photo Source</a>
-    <img src={Foster-Agave-1-byAnnika-Harley} alt="momma cat with kittens" />
+    
+    <img src={mommaCat} alt="momma cat with kittens" />
     </div>
     </> 
   )
